@@ -12,7 +12,9 @@ export default function App() {
 
   return (
     <div className="flex gap-3 flex-wrap justify-center">
-      <User />
+      {user.map((user) => (
+        <User key={user.id} userInfo={user} />
+      ))}
     </div>
   );
 }
