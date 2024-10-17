@@ -13,7 +13,7 @@ export default function App() {
 
   return (
     <>
-      <Navbar />{" "}
+      <Navbar />
       <div className="flex gap-3 flex-wrap justify-center">
         {user.map((user) => (
           <User key={user.id} userInfo={user} />

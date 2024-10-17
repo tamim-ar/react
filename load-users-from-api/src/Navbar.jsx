@@ -1,7 +1,7 @@
 import React from "react";
 
 export default function Navbar() {
-  const user = false;
+  const user = true;
   return (
     <div>
       <div className="navbar bg-base-100">
