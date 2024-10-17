@@ -1,0 +1,62 @@
+[
+    {
+        "id": 1,
+        "productName": "Headphone",
+        "price": 1000,
+        "quantity": 10
+    },
+    {
+        "id": 2,
+        "productName": "Smartphone",
+        "price": 20000,
+        "quantity": 10
+    },
+    {
+        "id": 3,
+        "productName": "Laptop",
+        "price": 50000,
+        "quantity": 5
+    },
+    {
+        "id": 4,
+        "productName": "Smartwatch",
+        "price": 15000,
+        "quantity": 15
+    },
+    {
+        "id": 5,
+        "productName": "Tablet",
+        "price": 30000,
+        "quantity": 8
+    },
+    {
+        "id": 6,
+        "productName": "Wireless Mouse",
+        "price": 1500,
+        "quantity": 25
+    },
+    {
+        "id": 7,
+        "productName": "Bluetooth Speaker",
+        "price": 4000,
+        "quantity": 20
+    },
+    {
+        "id": 8,
+        "productName": "Gaming Console",
+        "price": 25000,
+        "quantity": 6
+    },
+    {
+        "id": 9,
+        "productName": "External Hard Drive",
+        "price": 8000,
+        "quantity": 12
+    },
+    {
+        "id": 10,
+        "productName": "Smart TV",
+        "price": 70000,
+        "quantity": 4
+    }
+]
