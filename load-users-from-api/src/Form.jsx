@@ -1,9 +1,24 @@
 import React from "react";
 
 export default function Form() {
+  const [formData, setFormData] = React.useState({
+    userName: "",
+    userEmail: "",
+    password: "",
+    gender: "",
+  });
+
+  const handleChange = (e) => {
+    const { name, value } = e.target;
+    setFormData({
+      ...formData,
+      [name]: value,
+    });
+  };
+
   const submitForm = (e) => {
     e.preventDefault();
-    console.log("Form submitted");
+    console.log("Form submitted", "formData", formData);
   };
 
   return (
@@ -17,6 +32,7 @@ export default function Form() {
             Name
           </label>
           <input
+            onChange={handleChange}
             type="text"
             id="name"
             name="userName"
@@ -37,6 +53,7 @@ export default function Form() {
             Email
           </label>
           <input
+            onChange={handleChange}
             type="email"
             id="email"
             name="userEmail"
@@ -57,6 +74,7 @@ export default function Form() {
             Password
           </label>
           <input
+            onChange={handleChange}
             type="password"
             id="password"
             name="password"
@@ -78,6 +96,7 @@ export default function Form() {
               Gender
             </label>
             <select
+              onChange={handleChange}
               name="gender"
               id="gender"
               className="mt-1"
