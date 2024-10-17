@@ -1,18 +1,30 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import Button from "react-bootstrap/Button";
 
 export default function App() {
+  const [users, setUsers] = useState([]);
+
+  useEffect(() => {
+    fetch("https://dummyjson.com/users")
+      .then((res) => res.json())
+      .then((data) => setUsers(data.users));
+  }, []);
   return (
-    <div>
-      <Button variant="primary">Primary</Button>{" "}
-      <Button variant="secondary">Secondary</Button>{" "}
-      <Button variant="success">Success</Button>{" "}
-      <Button variant="warning">Warning</Button>{" "}
-      <Button variant="danger">Danger</Button>{" "}
-      <Button variant="info">Info</Button>{" "}
-      <Button variant="light">Light</Button>{" "}
-      <Button variant="dark">Dark</Button>
-      <Button variant="link">Link</Button>
-    </div>
+    <>
+      <div className="d-flex gap-3 flex-wrap justify-content-center">
+        {users.map((user) => (
+          <div className="card" style={{ width: "18rem" }}>
+            <img src={user.image} className="card-img-top" alt="..." />
+            <div className="card-body">
+              <h5 className="card-title">{user.username}</h5>
+              <p className="card-text">{user.university}</p>
+              <a href="#" className="btn btn-primary">
+                Go somewhere
+              </a>
+            </div>
+          </div>
+        ))}
+      </div>
+    </>
   );
 }
