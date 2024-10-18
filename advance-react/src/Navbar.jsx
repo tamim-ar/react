@@ -22,6 +22,12 @@ export default function Navbar() {
       >
         Registration
       </NavLink>
+      <NavLink
+        to="/user"
+        className={({ isActive }) => (isActive ? "text-danger" : "")}
+      >
+        User
+      </NavLink>
     </div>
   );
 }
