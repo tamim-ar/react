@@ -13,6 +13,9 @@ const router = createBrowserRouter([
     element: (
       <div>
         <Layout />
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia, vitae?
+        </p>
       </div>
     ),
     errorElement: <ErrorPage />,
