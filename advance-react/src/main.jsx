@@ -7,6 +7,7 @@ import ErrorPage from "./ErrorPage.jsx";
 import React from "react";
 import Layout from "./Layout/Layout.jsx";
 import User from "./User.jsx";
+import { useParams } from "react-router-dom";
 
 const router = createBrowserRouter([
   {
@@ -30,7 +31,7 @@ const router = createBrowserRouter([
         element: <div>Registration Page</div>,
       },
       {
-        path: "/User",
+        path: "/user/:id",
         element: <User />,
       },
     ],

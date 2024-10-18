@@ -1,5 +1,6 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
+import { useParams } from "react-router-dom";
 
 export default function Navbar() {
   return (
@@ -23,7 +24,7 @@ export default function Navbar() {
         Registration
       </NavLink>
       <NavLink
-        to="/user"
+        to="/user/3"
         className={({ isActive }) => (isActive ? "text-danger" : "")}
       >
         User
