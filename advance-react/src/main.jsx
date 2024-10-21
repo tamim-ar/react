@@ -8,6 +8,7 @@ import React from "react";
 import Layout from "./Layout/Layout.jsx";
 import User from "./User.jsx";
 import { useParams } from "react-router-dom";
+import GrandParent from "./GrandParent.jsx";
 
 const router = createBrowserRouter([
   {
@@ -15,9 +16,7 @@ const router = createBrowserRouter([
     element: (
       <div>
         <Layout />
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia, vitae?
-        </p>
+        <GrandParent />
       </div>
     ),
     errorElement: <ErrorPage />,

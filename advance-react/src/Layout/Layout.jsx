@@ -5,7 +5,7 @@ import Navbar from "../Navbar";
 export default function () {
   return (
     <div>
-        <Navbar />
+      <Navbar />
       <Outlet />
     </div>
   );
