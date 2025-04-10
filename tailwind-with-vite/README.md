@@ -1,11 +1,40 @@
-# React + TypeScript + Vite
+# React + TypeScript + Vite + TailwindCSS
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern React application template with TypeScript and TailwindCSS integration.
 
-Currently, two official plugins are available:
+## Features
+- React 18 with TypeScript
+- Vite for fast development
+- TailwindCSS for styling
+- ESLint configuration
+- Hot Module Replacement (HMR)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Prerequisites
+- Node.js >= 14.x
+- npm >= 7.x
+
+## Installation
+
+1. Clone the repository
+```bash
+git clone [repository-url]
+cd tailwind-with-vite
+```
+
+2. Install dependencies
+```bash
+npm install
+```
+
+3. Start development server
+```bash
+npm run dev
+```
+
+4. Build for production
+```bash
+npm run build
+```
 
 ## Expanding the ESLint configuration
 
