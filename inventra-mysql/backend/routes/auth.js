@@ -8,7 +8,7 @@ const pool = require('../models/db');
 router.post('/register', async (req, res) => {
   try {
     const { name, email, password } = req.body;
-    
+
     // Check if user already exists
     const [existingUsers] = await pool.query('SELECT id FROM Users WHERE email = ?', [email]);
     if (existingUsers.length > 0) {
