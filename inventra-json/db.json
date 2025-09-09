@@ -1,0 +1,81 @@
+{
+  "users": [
+    {
+      "id": "usr_1",
+      "username": "admin",
+      "password": "$2a$10$zPzOPWqz9Qm9tjVXGHCOS.kB.BSrXg1ZkwTzA7kURkYYTHUzxgBYi",
+      "email": "admin@example.com",
+      "role": "admin",
+      "isActive": true,
+      "createdAt": "2024-01-01T00:00:00.000Z"
+    },
+    {
+      "id": "usr_1757427909490",
+      "username": "tamimresearch",
+      "password": "$2a$10$oAJ8VsURQndG7fLikzfPUuKJsnwoJlOHBnC3g1iufFnnkFSTad4ae",
+      "email": "tamim.research@gmail.com",
+      "role": "user",
+      "isActive": true,
+      "createdAt": "2025-09-09T14:25:09.490Z"
+    }
+  ],
+  "inventories": [
+    {
+      "id": "inv_1",
+      "title": "Office Supplies",
+      "description": "# Office Supplies Inventory\nTracking all office materials and equipment",
+      "category": "supplies",
+      "tags": [
+        "office",
+        "supplies",
+        "equipment"
+      ],
+      "createdBy": "usr_1",
+      "createdAt": "2024-01-01T00:00:00.000Z",
+      "customFields": [
+        {
+          "id": "cf_1",
+          "name": "Location",
+          "type": "text",
+          "required": true
+        },
+        {
+          "id": "cf_2",
+          "name": "Quantity",
+          "type": "number",
+          "required": true
+        }
+      ],
+      "access": {
+        "readers": [
+          "*"
+        ],
+        "editors": [
+          "usr_1"
+        ]
+      }
+    }
+  ],
+  "items": [
+    {
+      "id": "itm_1",
+      "inventoryId": "inv_1",
+      "customId": "SUP-001",
+      "createdBy": "usr_1",
+      "createdAt": "2024-01-01T00:00:00.000Z",
+      "customFields": {
+        "cf_1": "Storage Room A",
+        "cf_2": 50
+      }
+    }
+  ],
+  "discussions": [
+    {
+      "id": "dsc_1",
+      "inventoryId": "inv_1",
+      "userId": "usr_1",
+      "message": "Initial inventory created",
+      "createdAt": "2024-01-01T00:00:00.000Z"
+    }
+  ]
+}
